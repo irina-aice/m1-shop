@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: 980px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+}
+
+@media (max-width: var(--width-only-tablet)) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: var(--width-only-mobile)) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

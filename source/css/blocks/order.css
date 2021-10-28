@@ -1,0 +1,18 @@
+.order {
+  background-color: var(--color-light-pink);
+}
+
+.order__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order__icon {
+  display: block;
+  width: 130px;
+  height: 130px;
+  background-color: var(--color-dark-vinous);
+  border-radius: 50%;
+  border: 6px solid rgba(180, 1, 78, 0.5);
+}

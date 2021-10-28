@@ -1,0 +1,49 @@
+.card__discount {
+  font-weight: 700;
+  color: var(--color-darker-white);
+  background-color: var(--color-dark-vinous);
+}
+
+.card__inner {
+  padding: 17px 20px 25px 20px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card__fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.card__price {
+  font-size: 24px;
+  text-decoration-line: line-through;
+  color: var(--color-grey);
+}
+
+.card__discount-price {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: var(--color-dark-vinous);
+}
+
+.card__button {
+  width: 100%;
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-size: 18px;
+  color: var(--color-white);
+  background-image: linear-gradient(to top, #4776e6 0%, #8e54e9 100%);
+  background-color: transparent;
+  box-shadow: 0 4px 0 var(--color-blue);
+  border: 0;
+  border-radius: 4px;
+}
