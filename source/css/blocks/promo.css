@@ -42,13 +42,13 @@
 }
 
 .promo__discount {
-  margin: 0;
+  margin: 44px 0 0 0;
   font-size: 24px;
   line-height: 26px;
 }
 
 .promo__price {
-  margin: 0;
+  margin: 10px 0 0 0;
 }
 
 .promo__price-info {
@@ -65,6 +65,7 @@
 
 .promo__button-wrapper {
   display: flex;
+  margin-top: 40px;
 }
 
 .promo__button {
@@ -77,4 +78,8 @@
   text-transform: uppercase;
   color: inherit;
   border: 2px solid var(--color-white);
+}
+
+.promo__button + .promo__button {
+  margin-left: 20px;
 }

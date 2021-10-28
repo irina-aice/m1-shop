@@ -1,0 +1,10 @@
+.size-table {
+  min-height: 431px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/img/size-background.png");
+}

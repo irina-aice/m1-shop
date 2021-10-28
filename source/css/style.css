@@ -1,0 +1,17 @@
+@import "modern-normalize.css";
+@import "global.css";
+@import "blocks/header.css";
+@import "blocks/nav.css";
+@import "blocks/promo.css";
+@import "blocks/info.css";
+@import "blocks/gallery.css";
+@import "blocks/title.css";
+@import "blocks/size-table.css";
+@import "blocks/table-wrapper.css";
+@import "blocks/table.css";
+@import "blocks/catalog.css";
+@import "blocks/card.css";
+@import "blocks/size.css";
+@import "blocks/color.css";
+@import "blocks/order.css";
+@import "blocks/container.css";

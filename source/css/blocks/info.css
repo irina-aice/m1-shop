@@ -1,4 +1,8 @@
+.info{
+  padding-top: 50px;
+}
+
 .info__text {
-  margin: 0;
+  margin: 26px 0 0 0;
   text-align: center;
 }

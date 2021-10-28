@@ -55,15 +55,23 @@
     </section>
     <section class="info">
       <div class="container">
-        <h2 class="title">Хит №1 в мире - модные женские портупеи</h2>
+        <h2 class="info__title title">Хит №1 в мире - модные женские портупеи</h2>
         <p class="info__text">Как и все кожаные аксессуары, портупея находится сегодня на пике востребованности в мире моды, даря своей
           обладательнице внимание и уверенность в себе.</p>
         <p class="info__text">Многообразие видов портупей – это как Характер каждой девушки: от портупеи из тонких ремешков для романтичных
           и женственных натур, до сложных сплетений из средних и широких - для дерзких и раскрепощенных. </p>
       </div>
-      <div></div>
+      <div class="gallery">
+        <img src="img/gallary-1.jpg" alt="" width="160" height="320">
+        <img src="img/gallary-2.jpg" alt="" width="320" height="320">
+        <img src="img/gallary-3.jpg" alt="" width="320" height="320">
+        <img src="img/gallary-4.jpg" alt="" width="320" height="320">
+        <img src="img/gallary-5.jpg" alt="" width="320" height="320">
+        <img src="img/gallary-6.jpg" alt="" width="320" height="320">
+        <img src="img/gallary-7.jpg" alt="" width="160" height="320">
+      </div>
     </section>
-    <section>
+    <section class="size-table">
       <div class="container">
         <h2 class="title">Таблица размеров</h2>
         <div class="table-wrapper">
@@ -129,7 +137,7 @@
     </section>
     <section class="catalog">
       <div class="container">
-        <h2 class="title">Каталог</h2>
+        <h2 class="catalog__title title">Каталог</h2>
         <div class="catalog__button-wrapper">
           <a class="catalog__button catalog__button--active" href="#">повседневные портупеи</a>
           <a class="catalog__button" href="#">эротические портупеи</a>
@@ -137,7 +145,7 @@
         <ul class="catalog__list">
           <li class="catalog__item card">
             <div class="card__image-wrapper">
-              <img src="img/card-img1.jpg" alt="" height="350" width="300">
+              <img class="card__image" src="img/card-img1.jpg" alt="" height="350" width="300">
               <span class="card__discount">-53%</span>
             </div>
             <div class="card__inner">
@@ -213,7 +221,7 @@
           </li>
           <li class="catalog__item card">
             <div class="card__image-wrapper">
-              <img src="img/card-img2.jpg" alt="" height="350" width="300">
+              <img class="card__image" src="img/card-img2.jpg" alt="" height="350" width="300">
               <span class="card__discount">-53%</span>
             </div>
             <div class="card__inner">
@@ -280,7 +288,7 @@
           </li>
           <li class="catalog__item card">
             <div class="card__image-wrapper">
-              <img src="img/card-img3.jpg" alt="" height="350" width="300">
+              <img class="card__image" src="img/card-img3.jpg" alt="" height="350" width="300">
               <span class="card__discount">-53%</span>
             </div>
             <div class="card__inner">
@@ -290,7 +298,7 @@
                   <ul class="size__list">
                     <li class="size__item">
                       <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small" checked>
                         <span class="size__radio-icon">XS</span>
                       </label>
                     </li>
@@ -356,7 +364,7 @@
           </li>
           <li class="catalog__item card">
             <div class="card__image-wrapper">
-              <img src="img/card-img1.jpg" alt="" height="350" width="300">
+              <img class="card__image" src="img/card-img1.jpg" alt="" height="350" width="300">
               <span class="card__discount">-53%</span>
             </div>
             <div class="card__inner">
@@ -432,7 +440,7 @@
           </li>
           <li class="catalog__item card">
             <div class="card__image-wrapper">
-              <img src="img/card-img2.jpg" alt="" height="350" width="300">
+              <img class="card__image" src="img/card-img2.jpg" alt="" height="350" width="300">
               <span class="card__discount">-53%</span>
             </div>
             <div class="card__inner">
@@ -499,7 +507,7 @@
           </li>
           <li class="catalog__item card">
             <div class="card__image-wrapper">
-              <img src="img/card-img3.jpg" alt="" height="350" width="300">
+              <img class="card__image" src="img/card-img3.jpg" alt="" height="350" width="300">
               <span class="card__discount">-53%</span>
             </div>
             <div class="card__inner">
@@ -509,7 +517,7 @@
                   <ul class="size__list">
                     <li class="size__item">
                       <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small" checked>
                         <span class="size__radio-icon">XS</span>
                       </label>
                     </li>
@@ -578,23 +586,23 @@
     </section>
     <section class="order">
       <div class="container">
-        <h3 class="title title--order">КАК закзать?</h3>
+        <h3 class="title title--order">КАК заказать?</h3>
         <ul class="order__list">
           <li class="order__item">
-            <span class="order__icon"></span>
-            <p>Вы оформляете заказ на нашем сайте</p>
+            <span class="order__icon order__icon--newspaper"></span>
+            <p class="order__content">Вы оформляете заказ на нашем сайте</p>
           </li>
           <li class="order__item">
-            <span class="order__icon"></span>
-            <p>Менеджр перезвонит для уточнения деталей заказа</p>
+            <span class="order__icon order__icon--tel"></span>
+            <p class="order__content">Менеджр перезвонит для уточнения деталей заказа</p>
           </li>
           <li class="order__item">
-            <span class="order__icon"></span>
-            <p>В блежайшее время отправляем ваш заказ</p>
+            <span class="order__icon order__icon--package"></span>
+            <p class="order__content">В блежайшее время отправляем ваш заказ</p>
           </li>
           <li class="order__item">
-            <span class="order__icon"></span>
-            <p>Вы оплачиваете заказ при получении</p>
+            <span class="order__icon order__icon--card"></span>
+            <p class="order__content">Вы оплачиваете заказ при получении</p>
           </li>
         </ul>
       </div>

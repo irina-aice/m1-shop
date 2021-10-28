@@ -1,5 +1,26 @@
+.card {
+  max-width: 300px;
+}
+
+.card__image-wrapper {
+  position: relative;
+}
+
+.card__image {
+  object-fit: cover;
+}
+
 .card__discount {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  left: 11px;
+  width: 60px;
+  height: 60px;
   font-weight: 700;
+  border-radius: 50%;
   color: var(--color-darker-white);
   background-color: var(--color-dark-vinous);
 }
@@ -9,14 +30,21 @@
 }
 
 .card__title {
+  margin: 0;
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
 }
 
 .card__fieldset {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+.card__price-wrapper {
+  margin-top: 20px;
+  text-align: center;
 }
 
 .card__price {
@@ -26,6 +54,7 @@
 }
 
 .card__discount-price {
+  margin-left: 22px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -38,6 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 12px;
   padding: 0;
   font-size: 18px;
   color: var(--color-white);

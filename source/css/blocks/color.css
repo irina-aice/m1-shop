@@ -1,5 +1,35 @@
+.color {
+  margin-top: 10px;
+}
+
 .color__list {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.color__item + .color__item {
+  margin-left: 10px;
+}
+
+.color__radio-icon {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-grey);
+}
+
+.color__radio-icon--black {
+  background-color: var(--color-darker-black);
+}
+
+.color__radio-icon--red {
+  background-color: var(--color-red);
+}
+
+.color__label .color__input:checked + .color__radio-icon {
+  border-color: var(--color-dark-vinous);
 }
