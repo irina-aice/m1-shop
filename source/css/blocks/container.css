@@ -6,14 +6,27 @@
   margin: 0 auto;
 }
 
-@media (max-width: var(--width-only-tablet)) {
+/*
+
+//mobile
+@media (max-width: 640px) {
+}
+
+//tablet
+@media (max-width: 960px) {
+}
+
+ */
+
+@media (max-width: 960px) {
   .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 640px;
+    /*padding-left: 50px;*/
+    /*padding-right: 50px;*/
   }
 }
 
-@media (max-width: var(--width-only-mobile)) {
+@media (max-width: 640px) {
   .container {
     padding-left: 15px;
     padding-right: 15px;

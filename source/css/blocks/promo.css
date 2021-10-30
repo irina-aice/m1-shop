@@ -3,6 +3,7 @@
   background-color: var(--color-dark-black);
   background-image: url("/img/promo-background.png");
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .promo__wrapper {

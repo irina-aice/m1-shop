@@ -26,6 +26,12 @@
   border-bottom: 1px dotted var(--color-pale-grey);
 }
 
+@media (max-width: 960px) {
+  .order__item::before {
+    top: 60%;
+  }
+}
+
 .order__item:first-child::before {
   width: 50%;
   right: 0;
@@ -50,6 +56,12 @@
   box-shadow: 0 0 0 3.5px rgba(206, 206, 211, 0.3);
 }
 
+@media (max-width: 960px) {
+  .order__item::after {
+    top: 58%;
+  }
+}
+
 .order__icon {
   position: relative;
   display: block;
@@ -61,6 +73,7 @@
   background-color: var(--color-dark-vinous);
   border-radius: 50%;
   border: 6px solid rgba(180, 1, 78, 0.5);
+  background-clip: padding-box;
 }
 
 .order__icon::before {
@@ -78,22 +91,22 @@
 }
 
 .order__icon--newspaper::before {
-  background-image: url("/img/icon-newspaper.svg");
+  background-image: url("/img/icon-newspaper.png");
 }
 
 .order__icon--tel::before {
-  background-image: url("/img/icon-telemarketer.svg");
+  background-image: url("/img/icon-telemarketer.png");
 }
 
 .order__icon--package::before {
   width: 48px;
-  background-image: url("/img/icon-package.svg");
+  background-image: url("/img/icon-package.png");
 }
 
 .order__icon--card::before {
   width: 60px;
   height: 45px;
-  background-image: url("/img/icon-credit-card.svg");
+  background-image: url("/img/icon-credit-card.png");
 }
 
 .order__content {
