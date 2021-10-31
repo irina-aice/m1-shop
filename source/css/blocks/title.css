@@ -26,3 +26,9 @@
   font-size: 60px;
   line-height: 1;
 }
+
+@media (max-width: 640px) {
+  .title--order {
+    font-size: 40px;
+  }
+}

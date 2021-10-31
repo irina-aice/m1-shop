@@ -9,6 +9,12 @@
   list-style: none;
 }
 
+@media (max-width: 640px) {
+  .nav__list {
+    flex-direction: column;
+  }
+}
+
 .nav__item + .nav__item {
   margin-left: 28px;
 }

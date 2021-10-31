@@ -12,9 +12,21 @@
   list-style: none;
 }
 
+@media (max-width: 640px) {
+  .order__list {
+    flex-direction: column;
+  }
+}
+
 .order__item {
   position: relative;
   width: 25%;
+}
+
+@media (max-width: 640px) {
+  .order__item {
+    width: 100%;
+  }
 }
 
 .order__item::before {

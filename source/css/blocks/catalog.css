@@ -7,8 +7,16 @@
 }
 
 .catalog__button-wrapper {
+  display: flex;
+  justify-content: center;
   margin-top: 30px;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+  .catalog__button-wrapper {
+    flex-direction: column;
+  }
 }
 
 .catalog__button {
@@ -23,6 +31,13 @@
   text-transform: uppercase;
   color: inherit;
   background-color: var(--color-dark-white);
+}
+
+@media (max-width: 640px) {
+  .catalog__button {
+    min-width: auto;
+    width: 100%;
+  }
 }
 
 .catalog__button--active {
@@ -43,6 +58,12 @@
 @media (max-width: 960px) {
   .catalog__list {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .catalog__list {
+    grid-template-columns: 1fr;
   }
 }
 

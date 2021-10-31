@@ -6,29 +6,15 @@
   margin: 0 auto;
 }
 
-/*
-
-//mobile
-@media (max-width: 640px) {
-}
-
-//tablet
-@media (max-width: 960px) {
-}
-
- */
-
 @media (max-width: 960px) {
   .container {
     max-width: 640px;
-    /*padding-left: 50px;*/
-    /*padding-right: 50px;*/
   }
 }
 
 @media (max-width: 640px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
