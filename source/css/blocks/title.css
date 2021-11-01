@@ -9,6 +9,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 640px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
 .title::after {
   content: "";
   position: absolute;

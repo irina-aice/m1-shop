@@ -12,14 +12,17 @@
   </script>
 </head>
 <body>
-  <header class="header">
+  <header class="js-header header">
     <div class="header__inner container">
-      <a class="logo" href="/">
-        <svg width="250" height="48">
-          <use xlink:href="/img/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <nav class="nav">
+      <div class="header__logo-wrapper">
+        <a class="logo" href="/">
+          <svg class="logo__icon" width="250" height="48">
+            <use xlink:href="/img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <button class="js-header-button header__button" type="button"></button>
+      </div>
+      <nav class="js-nav nav">
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#">Каталог</a>
@@ -140,450 +143,908 @@
     <section class="catalog">
       <div class="container">
         <h2 class="catalog__title title">Каталог</h2>
-        <div class="catalog__button-wrapper">
-          <a class="catalog__button catalog__button--active" href="#">повседневные портупеи</a>
-          <a class="catalog__button" href="#">эротические портупеи</a>
-        </div>
-        <ul class="catalog__list">
-          <li class="catalog__item card">
-            <div class="card__image-wrapper">
-              <img class="card__image" src="img/card-img1.jpg" alt="" height="350" width="300">
-              <span class="card__discount">-53%</span>
-            </div>
-            <div class="card__inner">
-              <h3 class="card__title">Портупея “Пеппи”</h3>
-              <form action="/" method="post">
-                <fieldset class="card__fieldset size">
-                  <ul class="size__list">
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
-                        <span class="size__radio-icon">XS</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="small">
-                        <span class="size__radio-icon">S</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="medium">
-                        <span class="size__radio-icon">M</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="large">
-                        <span class="size__radio-icon">L</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
-                               disabled>
-                        <span class="size__radio-icon">XL</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
-                               disabled>
-                        <span class="size__radio-icon">XXL</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="card__fieldset color">
-                  <ul class="color__list">
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="black">
-                        <span class="color__radio-icon color__radio-icon--black"></span>
-                        <span class="visually-hidden">Black</span>
-                      </label>
-                    </li>
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="red">
-                        <span class="color__radio-icon color__radio-icon--red"></span>
-                        <span class="visually-hidden">Red</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="card__price-wrapper">
-                  <span class="card__price">4990 p.</span>
-                  <span class="card__discount-price">2990 p.</span>
-                </div>
-                <button class="card__button" type="submit">заказать</button>
-              </form>
-            </div>
+        <ul class="js-tab-list catalog__button-wrapper">
+          <li>
+            <a class="catalog__button catalog__button--active"
+               href="#section1">повседневные портупеи</a>
           </li>
-          <li class="catalog__item card">
-            <div class="card__image-wrapper">
-              <img class="card__image" src="img/card-img2.jpg" alt="" height="350" width="300">
-              <span class="card__discount">-53%</span>
-            </div>
-            <div class="card__inner">
-              <h3 class="card__title">Портупея “Влади”</h3>
-              <form action="/" method="post">
-                <fieldset class="card__fieldset size">
-                  <ul class="size__list">
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
-                        <span class="size__radio-icon">XS</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="small">
-                        <span class="size__radio-icon">S</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="medium">
-                        <span class="size__radio-icon">M</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="large">
-                        <span class="size__radio-icon">L</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-large">
-                        <span class="size__radio-icon">XL</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large">
-                        <span class="size__radio-icon">XXL</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="card__fieldset color">
-                  <ul class="color__list">
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="black">
-                        <span class="color__radio-icon color__radio-icon--black"></span>
-                        <span class="visually-hidden">Black</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="card__price-wrapper">
-                  <span class="card__price">4990 p.</span>
-                  <span class="card__discount-price">2990 p.</span>
-                </div>
-                <button class="card__button" type="submit">заказать</button>
-              </form>
-            </div>
-          </li>
-          <li class="catalog__item card">
-            <div class="card__image-wrapper">
-              <img class="card__image" src="img/card-img3.jpg" alt="" height="350" width="300">
-              <span class="card__discount">-53%</span>
-            </div>
-            <div class="card__inner">
-              <h3 class="card__title">Портупея “Джони Миллер”</h3>
-              <form action="/" method="post">
-                <fieldset class="card__fieldset size">
-                  <ul class="size__list">
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small" checked>
-                        <span class="size__radio-icon">XS</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="small">
-                        <span class="size__radio-icon">S</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="medium">
-                        <span class="size__radio-icon">M</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="large">
-                        <span class="size__radio-icon">L</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
-                               disabled>
-                        <span class="size__radio-icon">XL</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
-                               disabled>
-                        <span class="size__radio-icon">XXL</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="card__fieldset color">
-                  <ul class="color__list">
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="black">
-                        <span class="color__radio-icon color__radio-icon--black"></span>
-                        <span class="visually-hidden">Black</span>
-                      </label>
-                    </li>
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="red">
-                        <span class="color__radio-icon color__radio-icon--red"></span>
-                        <span class="visually-hidden">Red</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="card__price-wrapper">
-                  <span class="card__price">4990 p.</span>
-                  <span class="card__discount-price">2990 p.</span>
-                </div>
-                <button class="card__button" type="submit">заказать</button>
-              </form>
-            </div>
-          </li>
-          <li class="catalog__item card">
-            <div class="card__image-wrapper">
-              <img class="card__image" src="img/card-img1.jpg" alt="" height="350" width="300">
-              <span class="card__discount">-53%</span>
-            </div>
-            <div class="card__inner">
-              <h3 class="card__title">Портупея “Пеппи”</h3>
-              <form action="/" method="post">
-                <fieldset class="card__fieldset size">
-                  <ul class="size__list">
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
-                        <span class="size__radio-icon">XS</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="small">
-                        <span class="size__radio-icon">S</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="medium">
-                        <span class="size__radio-icon">M</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="large">
-                        <span class="size__radio-icon">L</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
-                               disabled>
-                        <span class="size__radio-icon">XL</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
-                               disabled>
-                        <span class="size__radio-icon">XXL</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="card__fieldset color">
-                  <ul class="color__list">
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="black">
-                        <span class="color__radio-icon color__radio-icon--black"></span>
-                        <span class="visually-hidden">Black</span>
-                      </label>
-                    </li>
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="red">
-                        <span class="color__radio-icon color__radio-icon--red"></span>
-                        <span class="visually-hidden">Red</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="card__price-wrapper">
-                  <span class="card__price">4990 p.</span>
-                  <span class="card__discount-price">2990 p.</span>
-                </div>
-                <button class="card__button" type="submit">заказать</button>
-              </form>
-            </div>
-          </li>
-          <li class="catalog__item card">
-            <div class="card__image-wrapper">
-              <img class="card__image" src="img/card-img2.jpg" alt="" height="350" width="300">
-              <span class="card__discount">-53%</span>
-            </div>
-            <div class="card__inner">
-              <h3 class="card__title">Портупея “Влади”</h3>
-              <form action="/" method="post">
-                <fieldset class="card__fieldset size">
-                  <ul class="size__list">
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
-                        <span class="size__radio-icon">XS</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="small">
-                        <span class="size__radio-icon">S</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="medium">
-                        <span class="size__radio-icon">M</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="large">
-                        <span class="size__radio-icon">L</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-large">
-                        <span class="size__radio-icon">XL</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large">
-                        <span class="size__radio-icon">XXL</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="card__fieldset color">
-                  <ul class="color__list">
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="black">
-                        <span class="color__radio-icon color__radio-icon--black"></span>
-                        <span class="visually-hidden">Black</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="card__price-wrapper">
-                  <span class="card__price">4990 p.</span>
-                  <span class="card__discount-price">2990 p.</span>
-                </div>
-                <button class="card__button" type="submit">заказать</button>
-              </form>
-            </div>
-          </li>
-          <li class="catalog__item card">
-            <div class="card__image-wrapper">
-              <img class="card__image" src="img/card-img3.jpg" alt="" height="350" width="300">
-              <span class="card__discount">-53%</span>
-            </div>
-            <div class="card__inner">
-              <h3 class="card__title">Портупея “Джони Миллер”</h3>
-              <form action="/" method="post">
-                <fieldset class="card__fieldset size">
-                  <ul class="size__list">
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-small" checked>
-                        <span class="size__radio-icon">XS</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="small">
-                        <span class="size__radio-icon">S</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="medium">
-                        <span class="size__radio-icon">M</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="large">
-                        <span class="size__radio-icon">L</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
-                               disabled>
-                        <span class="size__radio-icon">XL</span>
-                      </label>
-                    </li>
-                    <li class="size__item">
-                      <label class="size__label">
-                        <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
-                               disabled>
-                        <span class="size__radio-icon">XXL</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset class="card__fieldset color">
-                  <ul class="color__list">
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="black">
-                        <span class="color__radio-icon color__radio-icon--black"></span>
-                        <span class="visually-hidden">Black</span>
-                      </label>
-                    </li>
-                    <li class="color__item">
-                      <label class="color__label">
-                        <input class="visually-hidden color__input" type="radio" name="color" value="red">
-                        <span class="color__radio-icon color__radio-icon--red"></span>
-                        <span class="visually-hidden">Red</span>
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <div class="card__price-wrapper">
-                  <span class="card__price">4990 p.</span>
-                  <span class="card__discount-price">2990 p.</span>
-                </div>
-                <button class="card__button" type="submit">заказать</button>
-              </form>
-            </div>
+          <li>
+            <a class="catalog__button"
+               href="#section2">эротические портупеи</a>
           </li>
         </ul>
+        <section id="section1" class="js-tab-panel">
+          <ul class="catalog__list">
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img1.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Пеппи”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="red">
+                          <span class="color__radio-icon color__radio-icon--red"></span>
+                          <span class="visually-hidden">Red</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img2.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Влади”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large">
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size"
+                                 value="double-extra-large">
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img3.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Джони Миллер”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small"
+                                 checked>
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="red">
+                          <span class="color__radio-icon color__radio-icon--red"></span>
+                          <span class="visually-hidden">Red</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img1.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Пеппи”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="red">
+                          <span class="color__radio-icon color__radio-icon--red"></span>
+                          <span class="visually-hidden">Red</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img2.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Влади”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large">
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size"
+                                 value="double-extra-large">
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img3.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Джони Миллер”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small"
+                                 checked>
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="red">
+                          <span class="color__radio-icon color__radio-icon--red"></span>
+                          <span class="visually-hidden">Red</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section id="section2" class="js-tab-panel">
+          <ul class="catalog__list">
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img2.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Влади”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large">
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size"
+                                 value="double-extra-large">
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img3.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Джони Миллер”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small"
+                                 checked>
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="red">
+                          <span class="color__radio-icon color__radio-icon--red"></span>
+                          <span class="visually-hidden">Red</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img1.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Пеппи”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="red">
+                          <span class="color__radio-icon color__radio-icon--red"></span>
+                          <span class="visually-hidden">Red</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img1.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Пеппи”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="red">
+                          <span class="color__radio-icon color__radio-icon--red"></span>
+                          <span class="visually-hidden">Red</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img2.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Влади”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small">
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large">
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size"
+                                 value="double-extra-large">
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+            <li class="catalog__item card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="img/card-img3.jpg" alt="" height="350" width="300">
+                <span class="card__discount">-53%</span>
+              </div>
+              <div class="card__inner">
+                <h3 class="card__title">Портупея “Джони Миллер”</h3>
+                <form action="/" method="post">
+                  <fieldset class="card__fieldset size">
+                    <ul class="size__list">
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-small"
+                                 checked>
+                          <span class="size__radio-icon">XS</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="small">
+                          <span class="size__radio-icon">S</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="medium">
+                          <span class="size__radio-icon">M</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="large">
+                          <span class="size__radio-icon">L</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XL</span>
+                        </label>
+                      </li>
+                      <li class="size__item">
+                        <label class="size__label">
+                          <input class="size__input visually-hidden" type="radio" name="size" value="double-extra-large"
+                                 disabled>
+                          <span class="size__radio-icon">XXL</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="card__fieldset color">
+                    <ul class="color__list">
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="black">
+                          <span class="color__radio-icon color__radio-icon--black"></span>
+                          <span class="visually-hidden">Black</span>
+                        </label>
+                      </li>
+                      <li class="color__item">
+                        <label class="color__label">
+                          <input class="visually-hidden color__input" type="radio" name="color" value="red">
+                          <span class="color__radio-icon color__radio-icon--red"></span>
+                          <span class="visually-hidden">Red</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <div class="card__price-wrapper">
+                    <span class="card__price">4990 p.</span>
+                    <span class="card__discount-price">2990 p.</span>
+                  </div>
+                  <button class="card__button" type="submit">заказать</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
     </section>
     <section class="order">
@@ -610,6 +1071,7 @@
       </div>
     </section>
   </main>
-
+  <script src="/js/vendor.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

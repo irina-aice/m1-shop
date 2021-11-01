@@ -1,5 +1,10 @@
-.nav {
-  text-transform: uppercase;
+@media (max-width: 640px) {
+  .nav {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .nav__list {
@@ -7,16 +12,27 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-transform: uppercase;
 }
 
 @media (max-width: 640px) {
   .nav__list {
+    padding-top: 15px;
+    padding-bottom: 15px;
     flex-direction: column;
+    text-align: left;
   }
 }
 
 .nav__item + .nav__item {
   margin-left: 28px;
+}
+
+@media (max-width: 640px) {
+  .nav__item + .nav__item {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 
 .nav__item a {

@@ -1,6 +1,7 @@
 @import "modern-normalize.css";
 @import "global.css";
 @import "blocks/header.css";
+@import "blocks/logo.css";
 @import "blocks/nav.css";
 @import "blocks/promo.css";
 @import "blocks/info.css";

@@ -26,6 +26,7 @@
 @media (max-width: 640px) {
   .order__item {
     width: 100%;
+    padding-top: 10px;
   }
 }
 
@@ -44,14 +45,43 @@
   }
 }
 
+@media (max-width: 640px) {
+  .order__item::before {
+    height: 100%;
+    width: auto;
+    left: 50%;
+    top: 0;
+    border-left: 1px dotted var(--color-pale-grey);
+    border-bottom: 0;
+  }
+}
+
 .order__item:first-child::before {
   width: 50%;
   right: 0;
   left: auto;
 }
 
+@media (max-width: 640px) {
+  .order__item:first-child::before {
+    width: auto;
+    height: 50%;
+    bottom: 0;
+    top: 170px;
+    right: auto;
+    left: 50%;
+  }
+}
+
 .order__item:last-child::before {
   width: 50%;
+}
+
+@media (max-width: 640px) {
+  .order__item:last-child::before {
+    width: auto;
+    height: 170px;
+  }
 }
 
 .order__item::after {
@@ -71,6 +101,12 @@
 @media (max-width: 960px) {
   .order__item::after {
     top: 58%;
+  }
+}
+
+@media (max-width: 640px) {
+  .order__item::after {
+    top: 170px;
   }
 }
 
