@@ -52,21 +52,12 @@
   right: 0;
   margin: auto;
   background-color: var(--color-darker-black);
-  transition: transform 0.35s ease-out;
 }
 
-.modal--open .modal__button::before {
+.modal__button::before {
   transform: rotate(45deg);
 }
 
-.modal--open .modal__button::after {
+.modal__button::after {
   transform: rotate(-45deg);
 }
-
-/*.modal--open .modal__button:hover::before {
-  transform: rotate(45deg);
-}
-
-.modal--open .modal__button:hover::after {
-  transform: rotate(-45deg);
-}*/
