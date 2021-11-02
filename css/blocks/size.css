@@ -1,0 +1,30 @@
+.size {
+  margin-top: 15px;
+}
+
+.size__list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.size__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 25px;
+}
+
+.size__label .size__input:checked + .size__radio-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 40px;
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid var(--color-vinous);
+}

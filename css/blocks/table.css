@@ -1,0 +1,24 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table tr:nth-child(odd) {
+  background-color: var(--color-dark-white);
+}
+
+.table tbody tr:nth-child(2) {
+  font-weight: 700;
+}
+
+.table tbody th:first-child {
+  padding-left: 30px;
+  text-align: left;
+}
+
+.table tbody th,
+.table tbody td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}

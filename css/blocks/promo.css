@@ -1,0 +1,143 @@
+.promo {
+  color: var(--color-white);
+  background-color: var(--color-dark-black);
+  background-image: url("/img/promo-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 640px) {
+  .promo {
+    background-image: url("/img/promo-background-mobile.jpg");
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 580px;
+}
+
+.promo__subtitle {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .promo__subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.promo__title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 29px;
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 90px;
+}
+
+@media (max-width: 640px) {
+  .promo__title {
+    font-size: 57px;
+  }
+}
+
+.promo__title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 460px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--color-white);
+}
+
+@media (max-width: 640px) {
+  .promo__title::after {
+    width: 318px;
+  }
+}
+
+.promo__discount {
+  margin: 44px 0 0 0;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+@media (max-width: 640px) {
+  .promo__discount {
+    font-size: 18px;
+  }
+}
+
+.promo__price {
+  margin: 10px 0 0 0;
+}
+
+@media (max-width: 640px) {
+  .promo__price {
+    text-align: center;
+  }
+}
+
+.promo__price-info {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.promo__price-amount {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.promo__button-wrapper {
+  display: flex;
+  margin-top: 40px;
+}
+
+@media (max-width: 640px) {
+  .promo__button-wrapper {
+    flex-direction: column;
+  }
+}
+
+.promo__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  min-width: 260px;
+  min-height: 66px;
+  text-transform: uppercase;
+  color: inherit;
+  border: 2px solid var(--color-white);
+}
+
+.promo__button:hover,
+.promo__button:active,
+.promo__button:focus {
+  opacity: 0.6;
+}
+
+.promo__button + .promo__button {
+  margin-left: 20px;
+}
+
+@media (max-width: 640px) {
+  .promo__button + .promo__button {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,55 @@
+:root {
+  --color-white: #ffffff;
+  --color-dark-white: #f3f3f3;
+  --color-darker-white: #e6e6e6;
+  --color-light-grey: #dbdbdf;
+  --color-pale-grey: #ceced3;
+  --color-grey: #8c8c8c;
+  --color-black: #1e1e1e;
+  --color-black-rgb: 30, 30, 30;
+  --color-light-black-rgb: 0, 0, 0;
+  --color-dark-black: #030102;
+  --color-darker-black: #000000;
+
+  --color-light-pink: #f7f2f4;
+  --color-red: #ff0000;
+  --color-vinous: #ba0152;
+  --color-dark-vinous: #b4014e;
+  --color-blue: #375cb3;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
