@@ -28,8 +28,8 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "stylelint-fix": "stylelint \"source/sass/**/*.scss\" --syntax scss --fix",
+    "stylelint": "stylelint \"source/css/**/*.css\"",
+    "stylelint-fix": "stylelint \"source/css/**/*.css\" --fix",
     "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
     "test-fix": "npm run editorconfig && npm run stylelint-fix && eslint source/js/ --fix",
     "build": "gulp build",
@@ -49,7 +49,8 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.scss"
+    "source/sass/**/*.scss",
+    "source/css/**/*.css"
   ],
   "engines": {
     "node": "14.15.0"

@@ -1,0 +1,40 @@
+.title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 23px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: var(--color-black);
+}
+
+.title--order {
+  font-size: 60px;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .title--order {
+    font-size: 40px;
+  }
+}

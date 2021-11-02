@@ -14,12 +14,12 @@
     if (header.classList.contains(HEADER_OPEN_CLASS)) {
       header.classList.remove(HEADER_OPEN_CLASS);
 
-      gsap.to(nav, {height: 0});
+      window.gsap.to(nav, {height: 0});
     } else {
       header.classList.add(HEADER_OPEN_CLASS);
 
-      gsap.set(nav, {height: 'auto'});
-      gsap.from(nav, {height: 0});
+      window.gsap.set(nav, {height: 'auto'});
+      window.gsap.from(nav, {height: 0});
     }
-  })
+  });
 })();

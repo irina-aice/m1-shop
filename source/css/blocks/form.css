@@ -1,0 +1,124 @@
+.form {
+  margin-top: 20px;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__item {
+  position: relative;
+}
+
+.form__item + .form__item {
+  margin-top: 10px;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: inherit;
+  background-color: transparent;
+  border: 1px solid var(--color-light-grey);
+}
+
+/*@media (max-width: $width-only-mobile) {
+  .form__input,
+  .form__textarea {
+    padding-left: 16px;
+  }
+}*/
+
+.form__input--textarea {
+  min-height: 150px;
+  padding-top: 23px;
+  resize: none;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  transform-origin: 0 0;
+  color: inherit;
+  pointer-events: none;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+/*@media (max-width: $width-only-mobile) {
+  .form__label {
+    padding-left: 16px;
+  }
+}*/
+
+.form__input--error ~ .form__label,
+.form__textarea--error ~ .form__label {
+  color: var(--color-red);
+}
+
+.form__label,
+.form__input {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form__input:focus,
+.form__input:active,
+.form__textarea:focus,
+.form__textarea:active {
+  border-color: var(--color-black);
+}
+
+.form__input:not(:placeholder-shown),
+.form__input:focus {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.form__input:focus ~ .form__label,
+.form__textarea:focus ~ .form__label,
+.form__input:not(:placeholder-shown) ~ label,
+.form__textarea:not(:placeholder-shown) ~ label {
+  opacity: 0.5;
+  transform: scale(0.85) translateY(-10px) translateX(6px);
+}
+
+@media (max-width: 640px) {
+  .form__input:focus ~ .form__label,
+  .form__textarea:focus ~ .form__label,
+  .form__input:not(:placeholder-shown) ~ label,
+  .form__textarea:not(:placeholder-shown) ~ label {
+    transform: scale(0.85) translateY(-10px) translateX(4px);
+  }
+}
+
+.form__input::placeholder {
+  opacity: 1;
+  color: transparent;
+}
+
+.form__input--error,
+.form__input--error:focus,
+.form__input--error:active {
+  border-color: var(--color-red);
+}
+
+.form__button {
+  margin-top: 15px;
+}
+
+.form__agreement a {
+  margin: 10px 0 0 0;
+  color: inherit;
+}

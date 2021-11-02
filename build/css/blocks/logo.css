@@ -1,0 +1,12 @@
+.logo__icon {
+  display: block;
+  width: 250px;
+  height: 48px;
+}
+
+@media (max-width: 640px) {
+  .logo__icon {
+    width: 180px;
+    height: auto;
+  }
+}

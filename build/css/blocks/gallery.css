@@ -1,0 +1,6 @@
+.gallery {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr repeat(5, 2fr) 1fr;
+  overflow-x: hidden;
+}

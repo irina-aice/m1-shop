@@ -52,7 +52,7 @@ const vendorScripts = () => {
   return gulp.src([
     "node_modules/micromodal/dist/micromodal.js",
     "node_modules/gsap/dist/gsap.js",
-    "node_modules/gsap/dist/ScrollTrigger.js",
+    "node_modules/gsap/dist/ScrollToPlugin.js",
   ])
     .pipe(concat("vendor.js"))
     .pipe(gulp.dest("build/js"))
