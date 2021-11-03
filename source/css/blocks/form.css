@@ -28,13 +28,6 @@
   border: 1px solid var(--color-light-grey);
 }
 
-/*@media (max-width: $width-only-mobile) {
-  .form__input,
-  .form__textarea {
-    padding-left: 16px;
-  }
-}*/
-
 .form__input--textarea {
   min-height: 150px;
   padding-top: 23px;
@@ -55,12 +48,6 @@
   pointer-events: none;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
 }
-
-/*@media (max-width: $width-only-mobile) {
-  .form__label {
-    padding-left: 16px;
-  }
-}*/
 
 .form__input--error ~ .form__label,
 .form__textarea--error ~ .form__label {
