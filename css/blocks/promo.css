@@ -1,14 +1,14 @@
 .promo {
   color: var(--color-white);
   background-color: var(--color-dark-black);
-  background-image: url("/img/promo-background.png");
+  background-image: url("../../img/promo-background.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 @media (max-width: 640px) {
   .promo {
-    background-image: url("/img/promo-background-mobile.jpg");
+    background-image: url("../../img/promo-background-mobile.jpg");
   }
 }
 
