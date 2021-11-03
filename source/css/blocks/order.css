@@ -139,22 +139,22 @@
 }
 
 .order__icon--newspaper::before {
-  background-image: url("/img/icon-newspaper.png");
+  background-image: url("../../img/icon-newspaper.png");
 }
 
 .order__icon--tel::before {
-  background-image: url("/img/icon-telemarketer.png");
+  background-image: url("../../img/icon-telemarketer.png");
 }
 
 .order__icon--package::before {
   width: 48px;
-  background-image: url("/img/icon-package.png");
+  background-image: url("../../img/icon-package.png");
 }
 
 .order__icon--card::before {
   width: 60px;
   height: 45px;
-  background-image: url("/img/icon-credit-card.png");
+  background-image: url("../../img/icon-credit-card.png");
 }
 
 .order__content {
